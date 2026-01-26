@@ -31,7 +31,7 @@ export default function Contact() {
                   <span className="contactLabel">GitHub</span>
                   <span className="contactValue">@Marco-Bacci</span>
                 </a>
-                <a className="contactItem" href="/marco-bacci-cv.pdf" download>
+                <a className="contactItem" href={`${import.meta.env.BASE_URL}marco-bacci-cv.pdf`} download>
                   <span className="contactLabel">Curriculum</span>
                   <span className="contactValue">Scarica CV (PDF)</span>
                 </a>
