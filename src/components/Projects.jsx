@@ -19,7 +19,7 @@ function ProjectCard({ p }) {
         </div>
       </div>
       <div>
-        <img src={p.image} alt={p.name} className="projectImage" />
+        <img src={`${import.meta.env.BASE_URL}${p.image}`} className="projectImage" />
       </div>
       <p className="projectDesc">{p.description}</p>
 

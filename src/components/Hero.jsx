@@ -40,7 +40,7 @@ export default function Hero() {
 
             <div>
               <img
-                src="/foto-cv.png"
+                src={`${import.meta.env.BASE_URL}foto-cv.png`}
                 alt="Foto di Marco"
                 className="heroPhoto"
               />
