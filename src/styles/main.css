@@ -217,9 +217,16 @@ a {
 /* --------THEME-TOGGLE------- */
 
 .themeToggle {
+  position: fixed;
+  top: 28px;
+  right: 10px;
+  z-index: 10000;
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: 100%;
+  margin-left: 22px;
+  padding: 3px 5px;
+  border-radius: 50px;
+  font-size: 0.8em;
   cursor: pointer;
   color: var(--text);
   box-shadow: var(--shadow-soft);

@@ -26,12 +26,16 @@ export default function Navbar() {
                 GitHub
               </a>
             </nav>
-            <button className="themeToggle" onClick={toggleTheme}>
-              {theme === "dark" ? "🌙" : "☀️"}
-            </button>
           </div>
         </div>
       </div>
+            <button className="themeToggle" onClick={toggleTheme}>
+              {theme === "dark" ? (
+                <i className="fa-solid fa-lightbulb"></i>
+              ) : (
+                <i className="fa-solid fa-lightbulb"></i>
+              )}
+            </button>
     </header>
   );
 }
