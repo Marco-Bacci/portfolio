@@ -214,6 +214,22 @@ a {
   border-color: rgba(177, 18, 38, 0.9);
 }
 
+/* --------THEME-TOGGLE------- */
+
+.themeToggle {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100%;
+  cursor: pointer;
+  color: var(--text);
+  box-shadow: var(--shadow-soft);
+}
+
+.themeToggle:hover {
+  border-color: rgba(177, 18, 38, 0.6);
+  box-shadow: 0 0 0 4px var(--red-glow);
+}
+
 /* -----------------------CHIP-----------------------*/
 .chips {
   display: flex;
