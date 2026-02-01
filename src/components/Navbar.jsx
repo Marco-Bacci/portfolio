@@ -1,4 +1,7 @@
+import { useContext } from "react";
+import { ThemeContext } from "../contexts/ThemeContext";
 export default function Navbar() {
+  const { theme, toggleTheme } = useContext(ThemeContext);
   return (
     <header className="topbar">
       <div className="container">
@@ -23,6 +26,9 @@ export default function Navbar() {
                 GitHub
               </a>
             </nav>
+            <button onClick={toggleTheme}>
+              {theme === "dark" ? "🌙" : "☀️"}
+            </button>
           </div>
         </div>
       </div>
