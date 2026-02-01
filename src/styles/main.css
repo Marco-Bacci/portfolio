@@ -5,33 +5,45 @@
   --border: #3a3f4d;
   --text: #f0f0f0;
   --muted: #b0b6c3;
-
   --red: #b11226;
   --red-2: #d11b34;
   --red-glow: rgba(177, 18, 38, 0.22);
-
   --shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   --shadow-soft: 0 8px 18px rgba(0, 0, 0, 0.18);
   --radius: 18px;
-
   --page-bg: #2b2f3a;
+  --topbar-bg: rgba(10, 12, 16, 0.78);
+  --glass-1: rgba(255, 255, 255, 0.04);
+  --glass-2: rgba(255, 255, 255, 0.02);
+  --chip-bg: rgba(0, 0, 0, 0.18);
+  --chip-border: rgba(255, 255, 255, 0.1);
+  --link-soft: rgba(230, 230, 230, 0.9);
+  --nav-hover-bg: rgba(255, 255, 255, 0.04);
+  --nav-hover-border: rgba(255, 255, 255, 0.1);
+  --tag-color: rgba(230, 230, 230, 0.9);
 }
 :root[data-theme="light"] {
   --bg: #f6f7fb;
   --surface: #ffffff;
   --surface-2: #f1f3f7;
   --border: #d8dde7;
-  --text: #121826;
-  --muted: #4b5563;
-
+  --text: #000000;
+  --muted: #000000;
   --red: #b11226;
   --red-2: #d11b34;
   --red-glow: rgba(177, 18, 38, 0.18);
-
   --shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
   --shadow-soft: 0 8px 18px rgba(0, 0, 0, 0.08);
-
-  --page-bg: #f3f5f9;
+  --page-bg: #eeebe4f8;
+  --topbar-bg: rgba(216, 202, 202, 0.78);
+  --glass-1: rgba(0, 0, 0, 0.04);
+  --glass-2: rgba(0, 0, 0, 0.02);
+  --chip-bg: rgba(0, 0, 0, 0.04);
+  --chip-border: rgba(0, 0, 0, 0.08);
+  --link-soft: rgba(17, 24, 39, 0.86);
+  --nav-hover-bg: rgba(0, 0, 0, 0.06);
+  --nav-hover-border: rgba(0, 0, 0, 0.12);
+  --tag-color: rgb(177, 18, 38);
 }
 
 * {
@@ -71,7 +83,7 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 12, 16, 0.78);
+  background: var(--topbar-bg);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -117,8 +129,8 @@ a {
 
 .navLinks a:hover {
   color: var(--text);
-  background-color: rgba(255, 255, 255, 0.04);
-  border-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--nav-hover-bg);
+  border-color: var(--nav-hover-border);
 }
 
 /*-----------------------TIPOGRAPHY----------------------- */
@@ -154,11 +166,7 @@ a {
 /*-----------------------CARDS-----------------------*/
 .cardShell,
 .projectCard {
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.04),
-    rgba(255, 255, 255, 0.02)
-  );
+  background: linear-gradient(180deg, var(--glass-1), var(--glass-2));
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
@@ -235,6 +243,7 @@ a {
 .themeToggle:hover {
   border-color: rgba(177, 18, 38, 0.6);
   box-shadow: 0 0 0 4px var(--red-glow);
+  scale: 1.1;
 }
 
 /* -----------------------CHIP-----------------------*/
@@ -248,9 +257,9 @@ a {
   font-size: 0.9rem;
   padding: 7px 10px;
   border-radius: 999px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(0, 0, 0, 0.18);
-  color: rgba(230, 230, 230, 0.85);
+  border: 1px solid var(--chip-border);
+  background: var(--chip-bg);
+  color: var(--link-soft);
 }
 
 /* -----------------------HERO----------------------- */
@@ -324,7 +333,7 @@ a {
   margin: 15px 0px;
 }
 .projectLinks a {
-  color: rgba(230, 230, 230, 0.9);
+  color: var(--link-soft);
   border: 1px solid rgba(177, 18, 38, 0.55);
   padding: 6px 10px;
   border-radius: 12px;
@@ -355,7 +364,7 @@ a {
   border-radius: 100px;
   border: 1px solid rgba(177, 18, 38, 0.55);
   background: rgba(177, 18, 38, 0.1);
-  color: rgba(230, 230, 230, 0.9);
+  color: var(--tag-color);
   font-weight: 700;
 }
 
@@ -411,7 +420,7 @@ a {
 }
 
 .footerLink {
-  color: rgba(230, 230, 230, 0.9);
+  color: var(--link-soft);
   border: 1px solid rgba(177, 18, 38, 0.55);
   padding: 8px 12px;
   border-radius: 12px;
