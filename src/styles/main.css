@@ -16,6 +16,23 @@
 
   --page-bg: #2b2f3a;
 }
+:root[data-theme="light"] {
+  --bg: #f6f7fb;
+  --surface: #ffffff;
+  --surface-2: #f1f3f7;
+  --border: #d8dde7;
+  --text: #121826;
+  --muted: #4b5563;
+
+  --red: #b11226;
+  --red-2: #d11b34;
+  --red-glow: rgba(177, 18, 38, 0.18);
+
+  --shadow: 0 12px 28px rgba(0, 0, 0, 0.1);
+  --shadow-soft: 0 8px 18px rgba(0, 0, 0, 0.08);
+
+  --page-bg: #f3f5f9;
+}
 
 * {
   box-sizing: border-box;
@@ -46,7 +63,7 @@ a {
   padding: 70px 0;
 }
 
-.lead{
+.lead {
   color: var(--muted);
 }
 /*-----------------------HEADER/NAVBAR-----------------------*/
@@ -235,25 +252,24 @@ a {
 .heroGrid {
   display: grid;
   grid-template-columns: 1.35fr 1fr;
-  align-items: stretch; 
+  align-items: stretch;
 }
 
 .heroContent {
   padding: 22px;
   display: flex;
   flex-direction: column;
-  justify-content: center; 
-
+  justify-content: center;
 }
 
 .heroPhoto {
   width: 100%;
   height: 100%;
-  max-height: 600px; 
-  object-fit: contain; 
+  max-height: 600px;
+  object-fit: contain;
   object-position: center calc(100% - 40px);
   display: block;
-  transform: scale(1.12); 
+  transform: scale(1.12);
   mask-image: radial-gradient(circle at center 30%, black 60%, transparent 75%);
 }
 
@@ -360,7 +376,6 @@ a {
   font-weight: 600;
   color: var(--text);
 }
-
 
 /*-----------------------FOOTER----------------------- */
 .footer {
