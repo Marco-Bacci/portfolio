@@ -8,12 +8,10 @@ export default function Hero() {
             <div className="heroContent">
               <h1 className="title">Marco Bacci</h1>
               <p className="lead">
-                Sono uno sviluppatore web junior con formazione full stack (600
-                ore) presso Boolean, residente a Torino. Ho vissuto per più di
-                dieci anni tra Regno Unito e Spagna, un’esperienza che mi ha
-                permesso di sviluppare una forte capacità di adattamento. Mi
-                concentro sullo sviluppo di applicazioni web moderne, pulite e
-                ben strutturate.
+                Amo il momento in cui un’idea smette di essere solo un pensiero
+                e diventa qualcosa di concreto, che funziona e risolve un
+                problema reale. Mi concentro sullo sviluppo di applicazioni web
+                moderne, pulite e ben strutturate.
               </p>
 
               <div className="heroCtas">
